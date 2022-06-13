@@ -1,4 +1,4 @@
-# Random
+# random
 projects not important enough to have their own repo.
 
 includes:
