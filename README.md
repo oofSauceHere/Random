@@ -1,5 +1,5 @@
 # Random
-projects not important enough to have their own repo
+projects not important enough to have their own repo.
 
 includes:
 1. discord bot (project to learn how to use discord.py)
