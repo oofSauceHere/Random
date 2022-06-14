@@ -3,6 +3,12 @@ import requests
 import random
 import time
 import smtplib
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+PASSWORD = os.getenv('PASSWORD')
 
 url = "https://twitter135.p.rapidapi.com/Search/"
 
@@ -19,7 +25,7 @@ while(True):
     key = keylist[random.randint(0, len(keylist)-1)]
 
     gmail_user = 'ilovedreamsmp9@gmail.com'
-    gmail_password = 'ifuckinglovedreamsmp'
+    gmail_password = PASSWORD
 
     sent_from = gmail_user
     to = ['wella123badr@gmail.com', 'seannoh@gmail.com']
@@ -42,6 +48,6 @@ Subject: %s
         smtp_server.close()
         print ("Email sent successfully!")
     except Exception as ex:
-        print ("Something went wrong…",ex)
+        print ("Something went wrongï¿½",ex)
 
     time.sleep(30)
